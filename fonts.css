@@ -1,0 +1,67 @@
+.menu_bar {
+	display: none;
+}
+
+header {
+	width: 100%;
+}
+
+header nav {
+	display: block;
+	background: darkorchid;
+	z-index:1000;
+	width: 100%;
+	float: left;
+	margin: 5px auto;
+}
+
+section {
+	width: 78%;
+    display: block;
+    float: left;
+    padding: 20px 5px 0px;
+}
+
+aside{
+	width: 20%;
+    display: block;
+    float: right;
+    padding: 20px 0px 5px;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-top: 5px;
+	}
+
+	.menu_bar {
+		display: block;
+		width:97%;
+		top: 15px;
+		padding: 10px 5px 5px;
+		background: darkorchid;
+	}
+
+	header nav {
+		width: 50%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+
+	section {
+		width: 97%;
+		display: block;
+		float: left;
+		padding: 20px 5px 0px;
+	}
+	
+	aside{
+		width: 97%;
+		display: block;
+		float: left;
+		padding: 5px 5px 0px;
+	}
+}
